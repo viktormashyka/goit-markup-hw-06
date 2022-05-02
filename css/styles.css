@@ -727,10 +727,73 @@ justify-content: space-between;
   background-color: #afb1b8;
 }
 
-/* .footer-social-item-link:hover .footer-icon-social,
-.footer-social-item-link:focus .footer-icon-social {
-  fill: currentColor;
-} */
+.footer-send {
+  height: 86px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-social + .footer-send {
+  margin-left: 93px;
+}
+
+.footer-send-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-send-box {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+.footer-btn-send {
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.footer-title-send-box + .footer-btn-send {
+  margin-left: 12px;
+}
+
+.footer-btn-title {
+  color: #eeeeee;
+  margin-right: 10px;
+}
+
+.footer-logo-send {
+  fill: #ffffff;
+}
 
 /* -----------------------------BACKDROP---------------------------- */
 
@@ -776,6 +839,7 @@ justify-content: space-between;
   opacity: 1;
   transition: background-color var(--transition-main), box-shadow var(--transition-main),
     opacity var(--transition-main), transform var(--transition-main);
+  padding: 40px;
 }
 
 .close-black {
@@ -799,4 +863,15 @@ justify-content: space-between;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-bottom: 12px;
 }

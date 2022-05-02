@@ -410,6 +410,18 @@
             </li>
           </ul>
         </div>
+        <form action="" class="footer-send">
+          <div class="footer-title-send-box">
+            <p class="footer-send-title">Подпишитесь на рассылку</p>
+            <input type="email" name="email" placeholder="E-mail" class="footer-send-box" />
+          </div>
+          <button type="submit" class="footer-btn-send">
+            <span class="footer-btn-title">Подписаться</span>
+            <svg class="footer-logo-send" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <!--Модальне вікно-->
@@ -420,6 +432,30 @@
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="">
+          <label for="">
+            Имя
+            <input type="name" name="name" />
+          </label>
+          <label for="">
+            Телефон
+            <input type="tel" name="tel" />
+          </label>
+          <label for="">
+            Почта
+            <input type="email" name="email" />
+          </label>
+          <label for="">
+            Комментарий
+            <textarea placeholder="Введите текст"></textarea>
+          </label>
+        </form>
+        <input type="checkbox" name="submit" />
+        <p class="modal-text-checkbox">
+          Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+        </p>
+        <button type="submit" class="modal-btn-send">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
