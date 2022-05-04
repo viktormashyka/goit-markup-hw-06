@@ -439,7 +439,7 @@
             <svg class="modal-form-box-icon person" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black-18dp"></use>
             </svg>
-            <input type="name" name="name" id="name" class="modal-form-box person" />
+            <input type="name" name="name" id="name" class="modal-form-box person" required />
           </label>
 
           <label for="tel" class="modal-form-label tel">
@@ -447,7 +447,7 @@
             <svg class="modal-form-box-icon tel" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black-18dp"></use>
             </svg>
-            <input type="tel" name="tel" id="tel" class="modal-form-box tel" />
+            <input type="tel" name="tel" id="tel" class="modal-form-box tel" required />
           </label>
 
           <label for="email" class="modal-form-label email">
@@ -455,7 +455,7 @@
             <svg class="modal-form-box-icon email" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black-18dp"></use>
             </svg>
-            <input type="email" name="email" id="email" class="modal-form-box email" />
+            <input type="email" name="email" id="email" class="modal-form-box email" required />
           </label>
 
           <label for="comments" class="modal-form-label comments">
@@ -467,9 +467,14 @@
             ></textarea>
           </label>
           <label class="modal-checkbox-box">
-            <input type="checkbox" name="submit" class="modal-quadro-checkbox" />
+            <input
+              type="checkbox"
+              name="submit"
+              class="modal-quadro-checkbox visually-hidden"
+              required
+            />
             <svg class="modal-checkbox-icon" width="16" height="15">
-              <use href="./images/icons.svg#icon-icon-check"></use>
+              <use href="./images/icons.svg#icon-check"></use>
             </svg>
             <p class="modal-text-checkbox">
               Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
