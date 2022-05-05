@@ -55,6 +55,19 @@ img {
   padding-bottom: 94px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* -----------------------------HEADER---------------------------- */
 .header {
   background-color: #ffffff;
@@ -908,7 +921,7 @@ input.footer-send-box {
   color: #757575;
 }
 
-.modal-form-label + .modal-form-label {
+.modal-form-label ~ .modal-form-label {
   margin-top: 10px;
 }
 
@@ -931,7 +944,7 @@ input.footer-send-box {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
-  margin-top: 4px;
+
   outline: none;
   transition: border-color var(--transition-main);
 }
@@ -946,39 +959,21 @@ input.footer-send-box {
   transition: fill var(--transition-main);
 }
 
-.modal-form-label:hover .modal-form-box-icon,
-.modal-form-label:focus .modal-form-box-icon {
+.modal-form-box:hover + .modal-form-box-icon,
+.modal-form-box:focus + .modal-form-box-icon {
   fill: #2196f3;
 }
 
-.modal-form-label.person {
+.modal-form-wrap {
   position: relative;
+  margin-top: 4px;
 }
 
-.modal-form-box-icon.person {
+.modal-form-box-icon {
   position: absolute;
-  top: 33px;
+  top: 50%;
   left: 12px;
-}
-
-.modal-form-label.tel {
-  position: relative;
-}
-
-.modal-form-box-icon.tel {
-  position: absolute;
-  top: 33px;
-  left: 12px;
-}
-
-.modal-form-label.email {
-  position: relative;
-}
-
-.modal-form-box-icon.email {
-  position: absolute;
-  top: 33px;
-  left: 12px;
+  transform: translateY(-50%);
 }
 
 .modal-form-box.comments {
@@ -988,7 +983,7 @@ input.footer-send-box {
   resize: none;
 }
 
-.modal-checkbox-box {
+.modal-form-checkbox {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1032,15 +1027,22 @@ input.footer-send-box {
   position: absolute;
 }
 
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+/* --Alternative checkbox-- */
+/* .modal-text-checkbox::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid;
+  border-radius: 3px;
+  margin-right: 5px;
+} */
+
+/* .modal-quadro-checkbox:checked ~ .modal-text-checkbox::before {
+  background: #2196f3;
+  border: none;
+  background-image: url(../images/icons.svg#icon-check);
+  background-repeat: no-repeat;
+  background-position: center;
 } */
 
 .modal-quadro-checkbox:checked + .modal-checkbox-icon {

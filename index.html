@@ -440,40 +440,46 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <label for="name" class="modal-form-label person">
-            <span class="modal-form-title">Имя</span>
+          <label for="name" class="modal-form-label person"> </label>
+          <span class="modal-form-title">Имя</span>
+          <div class="modal-form-wrap">
+            <input type="text" name="name" id="name" class="modal-form-box person" />
             <svg class="modal-form-box-icon person" width="18" height="18">
               <use href="./images/icons.svg#icon-person-black-18dp"></use>
             </svg>
-            <input type="text" name="name" id="name" class="modal-form-box person" />
-          </label>
-          <label for="tel" class="modal-form-label tel">
-            <span class="modal-form-title">Телефон</span>
+          </div>
+          <label for="tel" class="modal-form-label tel"> </label>
+          <span class="modal-form-title">Телефон</span>
+          <div class="modal-form-wrap">
+            <input type="tel" name="tel" id="tel" class="modal-form-box tel" required />
             <svg class="modal-form-box-icon tel" width="18" height="18">
               <use href="./images/icons.svg#icon-phone-black-18dp"></use>
             </svg>
-            <input type="tel" name="tel" id="tel" class="modal-form-box tel" required />
-          </label>
-          <label for="email" class="modal-form-label email">
-            <span class="modal-form-title">Почта</span>
+          </div>
+          <label for="email" class="modal-form-label email"> </label>
+          <span class="modal-form-title">Почта</span>
+          <div class="modal-form-wrap">
+            <input type="email" name="email" id="email" class="modal-form-box email" required />
             <svg class="modal-form-box-icon email" width="18" height="18">
               <use href="./images/icons.svg#icon-email-black-18dp"></use>
             </svg>
-            <input type="email" name="email" id="email" class="modal-form-box email" required />
-          </label>
-          <label for="comments" class="modal-form-label comments">
-            <span class="modal-form-title">Комментарий</span>
+          </div>
+          <label for="comments" class="modal-form-label comments"> </label>
+          <span class="modal-form-title">Комментарий</span>
+          <div class="modal-form-wrap">
             <textarea
               placeholder="Введите текст"
               id="comments"
               class="modal-form-box comments"
             ></textarea>
-          </label>
-          <label class="modal-checkbox-box">
+          </div>
+          <label for="submit" class="modal-form-checkbox">
             <input
               type="checkbox"
-              name="submit"
-              class="modal-quadro-checkbox visually-hidden"
+              name="policy"
+              value="policy"
+              id="submit"
+              class="modal-quadro-checkbox"
               required
             />
             <svg class="modal-checkbox-icon" width="16" height="15">
